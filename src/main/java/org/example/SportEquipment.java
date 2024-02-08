@@ -1,4 +1,6 @@
+// SportEquipment.java
 package org.example;
+
 public class SportEquipment {
     private static int lastId = 0;
 
@@ -9,11 +11,14 @@ public class SportEquipment {
     private boolean availability;
 
     public SportEquipment(String name, String description, double price, boolean availability) {
-        this.id = ++lastId;
+        this.id = id;
         this.name = name;
         this.description = description;
         this.price = price;
         this.availability = availability;
+
+        // Aktualizacja lastId, aby unikać konfliktów z nadchodzącymi dodawanymi sprzętami
+        lastId = Math.max(lastId, id);
     }
 
     public int getId() {
@@ -24,12 +29,24 @@ public class SportEquipment {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public String getDescription() {
         return description;
     }
 
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     public double getPrice() {
         return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 
     public boolean isAvailable() {
@@ -47,6 +64,4 @@ public class SportEquipment {
         System.out.println("Price: " + price);
         System.out.println("Availability: " + (availability ? Colors.GREEN + "Available" + Colors.RESET : Colors.RED + "Not Available" + Colors.RESET));
     }
-
-
 }

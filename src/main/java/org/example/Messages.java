@@ -9,7 +9,9 @@ public class Messages {
         System.out.println("\nChoose an option:");
         System.out.println("1. Add new sports equipment");
         System.out.println("2. Display available sports equipment");
-        System.out.println("3. Exit the program");
+        System.out.println("3. Update available sports equipment");
+        System.out.println("4. Delete available sports equipment");
+        System.out.println("5. Exit the program");
         System.out.print("Your choice: ");
     }
 

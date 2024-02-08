@@ -39,6 +39,18 @@ public class Main {
                     break;
 
                 case 3:
+                    EquipmentManager.updateEquipment(scanner, equipmentList);
+                    // Po aktualizacji sprzętu, zapisz listę do pliku
+                    DataHandler.saveData(equipmentList);
+                    break;
+
+                case 4:
+                    EquipmentManager.removeEquipment(scanner, equipmentList);
+                    // Po usunięciu sprzętu, zapisz listę do pliku
+                    DataHandler.saveData(equipmentList);
+                    break;
+
+                case 5:
                     Messages.displayExitMessage();
                     System.exit(0);
 

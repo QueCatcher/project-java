@@ -1,1 +1,16 @@
-[{"id":1,"name":"testowa nazwa","description":"testowy opis","price":1234.0,"availability":true},{"id":1,"name":"Rakieta Tenisowa","description":"Super Rakieta tenisowa","price":412.0,"availability":true},{"id":2,"name":"Fajna Trampolina","description":"Super fajna trampolina firmy Fajna","price":829.0,"availability":false},{"id":1,"name":"super buty","description":"fajne buty firmy super","price":321.0,"availability":true}]
+[
+  {
+    "id": 0,
+    "name": "Fajna rakieta",
+    "description": "Super rakieta tenisowa",
+    "price": 412.0,
+    "availability": true
+  },
+  {
+    "id": 0,
+    "name": "Zimowa czpaka",
+    "description": "ciepla zimowa czapka",
+    "price": 918.0,
+    "availability": true
+  }
+]
