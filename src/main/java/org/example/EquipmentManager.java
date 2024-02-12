@@ -21,9 +21,11 @@ public class EquipmentManager {
         Messages.displayAddingEquipmentMessage();
         newEquipment.displayDetails();
     }
+
     public static void updateEquipment(Scanner scanner, List<SportEquipment> equipmentList) {
         System.out.print("Enter the ID of the equipment to update: ");
         int idToUpdate = scanner.nextInt();
+        scanner.nextLine();  // Consuming the newline character
 
         SportEquipment equipmentToUpdate = findEquipmentById(equipmentList, idToUpdate);
         if (equipmentToUpdate != null) {
@@ -51,6 +53,7 @@ public class EquipmentManager {
     public static void removeEquipment(Scanner scanner, List<SportEquipment> equipmentList) {
         System.out.print("Enter the ID of the equipment to remove: ");
         int idToRemove = scanner.nextInt();
+        scanner.nextLine();  // Consuming the newline character
 
         SportEquipment equipmentToRemove = findEquipmentById(equipmentList, idToRemove);
         if (equipmentToRemove != null) {

@@ -25,7 +25,7 @@ public class Main {
                 case 1:
                     Messages.displayAddingEquipmentMessage();
                     EquipmentManager.addNewEquipment(scanner, equipmentList);
-                    // Po dodaniu nowego sprzętu, zapisz listę do pliku
+                    //Zapis nowego sprzętu po poprawnym dodaniu go podczas działania programu
                     DataHandler.saveData(equipmentList);
                     break;
 

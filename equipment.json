@@ -1,16 +1,9 @@
 [
   {
-    "id": 0,
-    "name": "Fajna rakieta",
-    "description": "Super rakieta tenisowa",
-    "price": 412.0,
-    "availability": true
-  },
-  {
-    "id": 0,
-    "name": "Zimowa czpaka",
-    "description": "ciepla zimowa czapka",
-    "price": 918.0,
-    "availability": true
+    "id": 2,
+    "name": "Fajne Rolki",
+    "description": "wytrzymałe rolki z tytanu",
+    "price": 9999.0,
+    "availability": false
   }
 ]

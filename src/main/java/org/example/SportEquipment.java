@@ -11,14 +11,13 @@ public class SportEquipment {
     private boolean availability;
 
     public SportEquipment(String name, String description, double price, boolean availability) {
-        this.id = id;
+        this.id = lastId;
         this.name = name;
         this.description = description;
         this.price = price;
         this.availability = availability;
 
-        // Aktualizacja lastId, aby unikać konfliktów z nadchodzącymi dodawanymi sprzętami
-        lastId = Math.max(lastId, id);
+        lastId = lastId + 1;
     }
 
     public int getId() {
